@@ -34,3 +34,5 @@ Route::get('/post/{id?}/{commentId?}', function (string $id = null) {
 Route::get('/postss', function () {
     return view('post');
 })->name('postPage');
+
+Route::redirect('/post-redirect', '/post', 301);
