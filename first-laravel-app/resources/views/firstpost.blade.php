@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>this is firstpost </h1>
+    <a href="{{ route('postPage') }}">post page</a>
 </body>
 </html>

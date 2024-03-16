@@ -30,3 +30,7 @@ Route::get('/post/firstpost', function () {
 Route::get('/post/{id?}/{commentId?}', function (string $id = null) {
     return "this is post number $id";
 })->whereNumber('id')->whereAlpha('commentId');
+
+Route::get('/postss', function () {
+    return view('post');
+})->name('postPage');
