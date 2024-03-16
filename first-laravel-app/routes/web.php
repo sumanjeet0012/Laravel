@@ -26,3 +26,7 @@ route::view('/direct_view', 'direct_view');
 Route::get('/post/firstpost', function () {
     return view('firstpost');
 });
+
+Route::get('/post/{id?}/{commentId?}', function (string $id = null) {
+    return "this is post number $id";
+})->whereNumber('id')->whereAlpha('commentId');
