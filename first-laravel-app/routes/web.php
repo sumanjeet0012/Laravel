@@ -50,3 +50,7 @@ Route::prefix('page')->group(function () {
         return "<h1>First Post Page</n1>";
     });
 });
+
+Route::fallback(function () {
+    return "<h1>Page Not Found</h1>";
+});
