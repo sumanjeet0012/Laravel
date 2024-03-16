@@ -36,3 +36,17 @@ Route::get('/postss', function () {
 })->name('postPage');
 
 Route::redirect('/post-redirect', '/post', 301);
+
+Route::prefix('page')->group(function () {
+    Route::get('/about', function () {
+        return "<h1>About Page</h1>";
+    });
+
+    Route::get('/gallery', function () {
+        return "<hil>Gallery Page</h1>";
+    });
+
+    Route::get('/post/firstpost', function () {
+        return "<h1>First Post Page</n1>";
+    });
+});
