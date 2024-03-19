@@ -51,6 +51,10 @@ Route::prefix('page')->group(function () {
     });
 });
 
+Route::get('/template', function () {
+    return view('template');
+})->name('template');
+
 Route::fallback(function () {
     return "<h1>Page Not Found</h1>";
 });
