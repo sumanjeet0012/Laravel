@@ -66,3 +66,7 @@ Route::fallback(function () {
 Route::get('/template3', function() {
     return view('template3');
 });
+
+Route::get('/template4', function() {
+    return view('template4');
+});
